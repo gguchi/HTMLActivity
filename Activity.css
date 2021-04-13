@@ -81,13 +81,13 @@ input[type="text"]{
 
 }
 
-div:nth-child(4) h2{
+div:nth-child(3) h2{
 
     background-color: pink;   
 
 }
 
-div:nth-child(4) p:nth-child(1){
+div:nth-child(3) p:nth-child(1){
 
     border: 5px white;
 
@@ -103,5 +103,74 @@ div:nth-child(3) > p > em{
 .newDiv p em{
 
     color: white;
+
+}
+
+/* FLEXBOX 
+
+! Use display: flex; to turn a container into a flex-container and its items into flex-items.
+! Use justify-content to set the main-axis alignment of flex-items. 
+!? Use align-items to define the cross-axis alignment of flex-items.
+! Use flex-direction to switch between columns and rows of flex-items.
+! Use the row-reverse or column-reverse values to flip the flex-items' order.
+! Use order to customize the order of individual elements.
+Use align-self to vertically align individual flex-items.
+Use flex-grow, -shrink, and -basis (or the "flex" property, which is shorthand for those three) to create flexible boxes that can stretch and shrink.
+
+*/
+
+.container, .container2, .container3{
+
+    /*Use display: flex; to turn a container into a flex-container and its items into flex-items.*/
+    display: flex;
+
+    background-color: orange;
+    margin: 25px 25px 25px 25px;
+
+
+}
+
+.container{
+    /* Use justify-content to set the main-axis alignment of flex-items. */
+    justify-content: flex-end;
+   
+
+}
+
+.container2{
+
+    /*Use align-items to define the cross-axis alignment of flex-items.*/
+    align-items:flex-end;
+
+}
+
+.container2 .box2{
+
+    /*Use order to customize the order of individual elements.*/
+
+}
+
+.container3{
+
+    /*Use flex-direction to switch between columns and rows of flex-items.*/
+    flex-direction: column;
+
+    /*Use the row-reverse or column-reverse values to flip the flex-items' order.*/
+    flex-direction: column-reverse;
+
+}
+
+.box{
+
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 50px 20px 5px 10px;
+
+}
+
+.box:hover{
+
+    background-color: blue;
 
 }
